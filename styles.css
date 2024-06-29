@@ -175,6 +175,7 @@ button {
     .optionButton { 
         height: 50px;
         padding: 3px;
+        font-size: 12px;
     }
 
     #options {
@@ -205,7 +206,7 @@ button {
     }
 }
 
-@media (max-width: 361px) {
+@media (max-width: 331px) {
     div{
         display:none;
     }
@@ -215,5 +216,4 @@ button {
         text-align: center;
         padding: 15px;
     }
-    
 }
