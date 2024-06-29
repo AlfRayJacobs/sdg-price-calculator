@@ -10,7 +10,7 @@ body {
     height: 100vh;
     max-height: 768px;
     margin: 0;
-    background-color: #f0f0f0;
+    background: transparent;
 }
 
 button { 
