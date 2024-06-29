@@ -1,0 +1,219 @@
+/* Base styles for all screen sizes */
+html{
+    font-family: "Gluten", cursive;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-height: 768px;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+button { 
+    font-family: "Gluten", cursive;
+    padding: 5px;
+}
+
+#app {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#dogContainer {
+    position: relative;
+    display: inline-block;
+}
+
+#dogImage {
+    margin: 5px;
+    width: 500px;
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+    transition: transform 0.3s ease;
+}
+
+#iconsContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.icon {
+    width: 200px;
+    height: 200px;
+    opacity: 0.8;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.subtext {
+    font-size: 14px;
+}
+
+.buttons button, .optionButton {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.optionButton{
+    width: 100%;
+}
+
+#options {
+    float: right;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+#price {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+#backButton {
+    position: absolute;
+    top: 10px;
+    left:10px;
+    padding: 10px 20px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#startButton { 
+    font-size: 28px;
+    padding: 10px;
+}
+
+.optionButton.selected {
+    background-color: #ffa500;
+    color: white;
+}
+
+#error {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #dogImage {
+        width: 350px;
+        height: 350px;
+        display: block;
+        margin-top: -100px;
+    }
+
+    .buttons button, .optionButton {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .optionButton { 
+        height: 50px;
+    }
+
+    #options {
+        width: 100%;
+        right: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        padding-top: 20px;
+        margin-left: 0px;
+    }
+
+    #backButton {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    #price {
+        display: block;
+    }
+
+    .subtext {
+        font-size: 14px;
+        text-align: center;
+        width: 550px;
+    }
+}
+
+@media (max-width: 576px) {
+    #dogImage {
+        width: 350px;
+        height: 350px;
+        display: block;
+        margin-top: -100px;
+    }
+
+    .buttons button, .optionButton {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .optionButton { 
+        height: 50px;
+        padding: 3px;
+    }
+
+    #options {
+        width: fit-content;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        padding-top: 20px;
+        overflow: wrap;
+        margin-left: 0px;
+    }
+
+    #backButton {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    #price {
+        display: block;
+    }
+
+    .subtext {
+        font-size: 14px;
+        text-align: center;
+        width: 350px;
+    }
+}
+
+@media (max-width: 361px) {
+    div{
+        display:none;
+    }
+
+    #error{
+        display: block;
+        text-align: center;
+        padding: 15px;
+    }
+    
+}

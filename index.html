@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Grooming Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/f61003f81e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <center>
+    <div id="app">
+        <button id="startButton">Click here to start</button>
+
+        <div id="selectionScreen" class="hidden">
+            <h2>Select your dogs size</h2>
+            <div class="buttons">
+                <button class="sizeButton" data-size="small">Small</button>
+                <button class="sizeButton" data-size="medium">Medium</button>
+                <button class="sizeButton" data-size="large">Large</button>
+            </div>
+        </div>
+        
+        <div id="optionsScreen" class="hidden">
+            <button id="backButton"><i class="fas fa-undo-alt"></i> Back</button>
+            <div id="dogContainer">
+                <div id="dogImage"></div>
+                <div id="iconsContainer"></div>
+            </div>
+            <div id="options">
+                <button class="optionButton" data-option="nails">Nails</button>
+                <button class="optionButton" data-option="shampoo">Shampoo</button>
+                <button class="optionButton" data-option="bath">Aloe Bath</button>
+                <button class="optionButton" data-option="cut">Cut</button>
+                <button class="optionButton" data-option="all">Full Groom</button>
+            </div>
+
+            <div id="price">
+                Estimated Price: £0
+            </div>
+            <div>
+                <center>
+                <p class="subtext">
+                    <i>
+                        Please note. The above price is an estimate based on the size of your dog. <br>
+                        Actual price may differ based on breed. For a more accurate price, please contact us.
+                    </i>
+                </p>
+                </center>
+            </div>
+        </div>
+    </div>
+    </center>
+    <div id="error">
+        <h2>Sorry!</h2>
+        This application is only available on screens wider than 361px
+    </div>
+    <script src="price-calc.js"></script>
+</body>
+</html>
