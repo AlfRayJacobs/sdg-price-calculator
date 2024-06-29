@@ -161,8 +161,8 @@ button {
 
 @media (max-width: 576px) {
     #dogImage {
-        width: 320px;
-        height: 320px;
+        width: 295px;
+        height: 295px;
         display: block;
         margin-top: -100px;
     }
